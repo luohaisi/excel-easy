@@ -6,6 +6,9 @@
 
 namespace ExcelEasy;
 
+/** PHPExcel_IOFactory */
+require dirname(__FILE__).'/../../../phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php';
+
 /**
  * The import excel class
 * @author luohaisi
@@ -21,7 +24,7 @@ class Import
 
 	public static function toArray($filename){
 		//载入文件
-		$PHPExcel = PHPExcel_IOFactory::load($filename);
+		$PHPExcel = \PHPExcel_IOFactory::load($filename);
 		// 获取表格数量
 		$sheetCount = $PHPExcel->getSheetCount();
 
