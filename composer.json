@@ -1,0 +1,21 @@
+{
+    "name": "luohaisi/excel-easy",
+    "description": "make you use phpexcel very easy",
+    "keywords": ["PHP","Excel","OpenXML","xlsx","xls","spreadsheet"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "luohaisi",
+            "homepage": "http://luohaisi.cn"
+        }
+    ],
+    "require": {
+        "phpoffice/phpexcel": "^1.8",
+        "php": ">=5.2.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "ExcelEasy\\": "src/"
+        }
+    }
+}
